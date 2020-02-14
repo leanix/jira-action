@@ -1,6 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
+
+#Preserve newlines
+IFS=
 
 ENVIRONMENT=$1
 
@@ -76,7 +79,7 @@ curl -s --request POST \
   "deployments": [
     {
       "deploymentSequenceNumber": '${GITHUB_RUN_NUMBER}',
-      "updateSequenceNumber": '${GITHUB_RUN_NUMBER}',
+      "updateSequenceNumber": 1,
       "issueKeys": [
         '${ISSUE_KEYS}'
       ],
