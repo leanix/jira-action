@@ -1,4 +1,3 @@
-# action.yml
 name: 'LeanIX Jira'
 description: 'Publish release tracking information to Jira tickets'
 inputs:
