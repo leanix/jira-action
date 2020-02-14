@@ -1,0 +1,13 @@
+# action.yml
+name: 'LeanIX Jira'
+description: 'Publish release tracking information to Jira tickets'
+inputs:
+  environment:
+    description: 'Environment can be test, staging or prod'
+    required: true
+    default: 'prod'
+runs:
+  using: 'docker'
+  image: 'leanix/jira-action:latest'
+  args:
+    - ${{ inputs.environment }}
