@@ -24,3 +24,7 @@ To publish release tracking information, just use the following action in any of
   with:
     environment: 'prod'
 ```
+
+## Copyright and license
+
+Copyright 2020 LeanIX GmbH under the [Unlicense license](LICENSE).
