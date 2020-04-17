@@ -28,7 +28,8 @@ if [[ -z $ENVIRONMENT_ID ]]; then
 fi
 
 # Get entire history
-git fetch --unshallow &> /dev/null
+echo "[$(date +"%Y-%m-%d %H:%M:%S")] Get entire git history..."
+git fetch --unshallow &> /dev/null || true
 
 # Get issue keys for Jira from git log
 echo "[$(date +"%Y-%m-%d %H:%M:%S")] Get issue keys for Jira..."
