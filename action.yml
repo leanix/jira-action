@@ -7,6 +7,6 @@ inputs:
     default: 'prod'
 runs:
   using: 'docker'
-  image: 'docker://leanix/jira-action:latest'
+  image: 'docker://leanixacrpublic.azurecr.io/jira-action:latest'
   args:
     - ${{ inputs.environment }}
